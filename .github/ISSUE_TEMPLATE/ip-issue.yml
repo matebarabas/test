@@ -23,10 +23,10 @@ body:
       label: Business Impact
       description: How important is this request?
       options:
-        - P0 - Blocking production/customer scenario
-        - P1 - High impact
-        - P2 - Medium impact
         - P3 - Low impact
+        - P2 - Medium impact
+        - P1 - High impact
+        - P0 - Blocking production/customer scenario
     validations:
       required: true
 
@@ -56,12 +56,6 @@ body:
       placeholder: What outcome would make this request complete?
     validations:
       required: true
-
-  - type: input
-    id: repo_area
-    attributes:
-      label: Area / Component
-      placeholder: e.g. AVM, AI Apps, Docs, Automation, API
 
   - type: checkboxes
     id: attestation
