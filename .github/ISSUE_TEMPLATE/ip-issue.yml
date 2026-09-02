@@ -41,8 +41,10 @@ body:
   - type: textarea
     id: impact
     attributes:
-      label: Customer / Business Impact
-      placeholder: Who is affected and what is the impact?
+      label: Business Impact
+      placeholder: |
+        What is the impact of this issue? Do NOT share any sensitive information!!! 
+        For Microsoft employees only: reach out to the IP owner via https://aka.ms/AILZ/Teams
     validations:
       required: true
 
