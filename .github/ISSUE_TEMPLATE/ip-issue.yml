@@ -42,9 +42,10 @@ body:
     id: impact
     attributes:
       label: Business Impact
-      placeholder: |
-        What is the impact of this issue? Do NOT share any sensitive information!!! 
+      description: |
+        Do NOT share any sensitive information!!! 
         For Microsoft employees only: reach out to the IP owner via https://aka.ms/AILZ/Teams
+      placeholder: What is the impact of this issue?
     validations:
       required: true
 
