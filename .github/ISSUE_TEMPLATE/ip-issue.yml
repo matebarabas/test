@@ -1,0 +1,73 @@
+name: Request / Issue
+description: Report a bug, request an enhancement, or ask for repo support.
+title: "[REQUEST]: "
+labels: []
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Bug
+        - Enhancement
+        - Documentation
+        - Automation
+        - Dependency Update
+        - Question / Support
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Business Impact
+      description: How important is this request?
+      options:
+        - P0 - Blocking production/customer scenario
+        - P1 - High impact
+        - P2 - Medium impact
+        - P3 - Low impact
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      placeholder: Describe the issue, request, or opportunity.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Customer / Business Impact
+      placeholder: Who is affected and what is the impact?
+    validations:
+      required: true
+
+  - type: textarea
+    id: success
+    attributes:
+      label: Definition of Done
+      placeholder: What outcome would make this request complete?
+    validations:
+      required: true
+
+  - type: input
+    id: repo_area
+    attributes:
+      label: Area / Component
+      placeholder: e.g. AVM, AI Apps, Docs, Automation, API
+
+  - type: checkboxes
+    id: attestation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: I provided enough information for the team to evaluate and prioritize this request.
+          required: true
+        - label: I understand prioritization is based on impact, urgency, and available capacity.
+          required: true
